@@ -1,6 +1,6 @@
 # next-current-url
 
-[![npm version](https://badge.fury.io/js/use-current-url.svg)](https://badge.fury.io/js/use-current-url)
+[![npm version](https://badge.fury.io/js/next-current-url.svg)](https://badge.fury.io/js/next-current-url)
 
 A React hook to get the current URL in Next.js applications.
 

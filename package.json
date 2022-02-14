@@ -1,6 +1,6 @@
 {
-  "name": "use-current-url",
-  "version": "1.0.2",
+  "name": "next-current-url",
+  "version": "1.0.0",
   "description": "A React hook to get the current URL.",
   "author": "Alex Mendes",
   "license": "MIT",
@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandermendes/use-current-url.git"
+    "url": "git+https://github.com/alexandermendes/next-current-url.git"
   },
-  "homepage": "https://github.com/alexandermendes/use-current-url#readme",
+  "homepage": "https://github.com/alexandermendes/next-current-url#readme",
   "bugs": {
-    "url": "https://github.com/alexandermendes/use-current-url/issues"
+    "url": "https://github.com/alexandermendes/next-current-url/issues"
   },
   "files": [
     "src",
