@@ -4,8 +4,8 @@
 
 A React hook to get the current URL in Next.js applications.
 
-Takes into account URL rewrites made by proxies, load balancers, etc. along
-the way (as long as these append special HTTP headers to the request).
+Respects client-side route changes and takes into account URL rewrites made by
+proxies, load balancers, etc. along the way.
 
 ## Installation
 
@@ -15,18 +15,7 @@ yarn add next-current-url
 
 ## Usage
 
-In its most basic form the `useCurrentUrl()` hook will, on mount, return the current URL:
-
-```jsx
-import { useCurrentUrl } from 'next-current-url';
-
-useCurrentUrl();
-// => http://example.com/page
-```
-
-If your application uses server-side rendering you can pass in the initial URL
-via the `NextCurrentUrlProvider` component. A good place to do this would be
-your `_app.jsx`:
+Add the following to your `_app.jsx` file:
 
 ```jsx
 import { getCurrentUrl, NextCurrentUrlProvider } from 'next-current-url';
@@ -47,4 +36,13 @@ App.getInitialProps = ({ req }) => (
 );
 
 export default App;
+```
+
+Then use the hook from anywhere in your application as follows:
+
+```jsx
+import { useCurrentUrl } from 'next-current-url';
+
+useCurrentUrl();
+// => http://example.com/page
 ```
